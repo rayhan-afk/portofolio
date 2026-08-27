@@ -72,10 +72,11 @@ const PROJECTS = [
         role: 'Fullstack Developer · PT LAPI ITB',
         summary: 'Multi-tier fund flow from donors through the LKBB treasury down to merchants and students.',
         tech: ['Laravel', 'MySQL', 'Livewire', 'Tailwind CSS', 'AlpineJS', 'Laravel Sanctum', 'GitHub Actions'],
-        cover: { src: 'assets/images/webp/scfs1.webp', w: 1600, h: 787 },
+        cover: { src: 'assets/images/webp/scfsgambarbaru1.webp', w: 1600, h: 771 },
         images: [
-            { src: 'assets/images/webp/scfs1.webp', w: 1600, h: 787, caption: 'Treasury dashboard — fund distribution across the tiers' },
-            { src: 'assets/images/webp/scfs2.webp', w: 1600, h: 787, caption: 'Transaction ledger and approval queue' }
+            { src: 'assets/images/webp/scfsgambarbaru1.webp', w: 1600, h: 771, caption: 'Executive dashboard: verified students, seller and supplier merchants, treasury balances and live ecosystem turnover' },
+            { src: 'assets/images/webp/scfsgambarbaru3.webp', w: 1600, h: 768, caption: 'Merchant POS: canteen till with scholarship QR, cash and QRIS payment paths' },
+            { src: 'assets/images/webp/scfsgambarbaru2.webp', w: 1600, h: 763, caption: 'Sign-in with captcha challenge, shared by every actor in the ecosystem' }
         ],
         description: 'An enterprise financial platform routing multi-tier fund flow from donors and investors, through the LKBB treasury, down to merchants, suppliers and scholarship students. Built on a CI-enforced four-layer Clean Architecture — 317 files, 1,168 tests — exposing a Sanctum-secured REST API for the mobile app.',
         highlights: [
@@ -97,10 +98,11 @@ const PROJECTS = [
         role: 'Mobile Developer · PT LAPI ITB',
         summary: 'Digital stipends and cashless canteen payment for scholarship students.',
         tech: ['Flutter', 'Dart', 'REST API', 'Flutter Secure Storage', 'Firebase'],
-        cover: { src: 'assets/images/webp/scfsmobile1.webp', w: 511, h: 945 },
+        cover: { src: 'assets/images/webp/scfsmobile2.webp', w: 759, h: 1600 },
         images: [
-            { src: 'assets/images/webp/scfsmobile1.webp', w: 511, h: 945, caption: 'Sign-in and balance overview' },
-            { src: 'assets/images/webp/scfsmobile2.webp', w: 511, h: 943, caption: 'QR payment at the canteen counter' }
+            { src: 'assets/images/webp/scfsmobile2.webp', w: 759, h: 1600, caption: 'Home: stipend balance, canteen discovery and the QR pay button in reach of the thumb' },
+            { src: 'assets/images/webp/scfsmobile1.webp', w: 759, h: 1600, caption: 'Sign-in with the campus student email, over an encrypted connection' },
+            { src: 'assets/images/webp/scfsmobile3.webp', w: 759, h: 1600, caption: 'Profile: verified scholarship status and academic record pulled from the platform' }
         ],
         description: 'A cross-platform Flutter app that lets university scholarship recipients manage their digital stipend and pay cashless at campus canteens, talking to merchant POS terminals through an encoded QR payload.',
         highlights: [
@@ -219,8 +221,12 @@ const PROJECTS = [
         role: 'Fullstack Developer',
         summary: 'Laravel + Livewire dashboard driving collections, QR codes, quizzes and visitor XP.',
         tech: ['Laravel', 'Livewire', 'Tailwind CSS', 'MySQL', 'Simple-QRCode'],
-        cover: null,
-        images: [],
+        cover: { src: 'assets/images/webp/museumweb2.webp', w: 1600, h: 769 },
+        images: [
+            { src: 'assets/images/webp/museumweb2.webp', w: 1600, h: 769, caption: 'Dashboard: collections, registered visitors, media gallery and the quiz bank at a glance' },
+            { src: 'assets/images/webp/museumweb3.webp', w: 1600, h: 768, caption: 'Quiz builder: each question is tied to a collection item and carries its own XP reward' },
+            { src: 'assets/images/webp/museumweb1.webp', w: 1600, h: 755, caption: 'Staff sign-in for the Museum Geologi administration panel' }
+        ],
         description: 'The web dashboard that powers the MuseumApp mobile experience. Built with Laravel and Livewire, it is where museum staff manage every collection, quiz and visitor statistic that the app displays.',
         highlights: [
             'Role-based access control across super admin, admin and visitor',
