@@ -79,3 +79,49 @@ html {
         max-width: 100%;
     }
 }
+
+/* Anchor targets clear the fixed navbar. */
+section[id] {
+    scroll-margin-top: 88px;
+}
+
+/* Visible keyboard focus everywhere, without a ring on mouse clicks. */
+:focus-visible {
+    outline: 2px solid #8b5cf6;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+/* Thin scrollbar inside the project dialog. */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Respect reduced-motion preferences: content still appears, it just stops moving. */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+    .animate-pulse-slow,
+    .animate-modal-pop {
+        animation: none;
+    }
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}

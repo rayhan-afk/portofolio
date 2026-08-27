@@ -24,15 +24,20 @@ Add one object to the `PROJECTS` array in `assets/js/script.js`. Cards are rende
 {
   slug: 'my-project',            // unique id, used by data-project=""
   title: 'Project name',
+  subtitle: 'Short qualifier',   // shown under the title on the card and dialog
   group: 'web',                  // 'web' | 'mobile' — decides which grid
   featured: false,               // true = shown only in the flagship section
-  cover: { src: '...', w: 1600, h: 760 },
+  period: 'Apr 2026 — May 2026',
+  role: 'Fullstack Developer',   // optional
   summary: 'One line for the card.',
   tech: ['Laravel', 'MySQL'],
-  images: [{ src: '...', w: 1600, h: 760 }],
-  description: 'Paragraph shown in the modal.',
-  features: ['Bullet', 'Bullet'],
-  repo: null                     // null renders a lock chip instead of a dead link
+  cover: { src: '...', w: 1600, h: 760 },   // null renders an initials cover
+  images: [                                  // [] renders "no screenshots"
+    { src: '...', w: 1600, h: 760, caption: 'Shown under the gallery' }
+  ],
+  description: 'Overview paragraph in the dialog.',
+  highlights: ['What I built, one bullet each'],
+  repo: null                     // null renders a "Private" chip, not a dead link
 }
 ```
 
