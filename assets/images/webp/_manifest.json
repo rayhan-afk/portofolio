@@ -1,0 +1,268 @@
+{
+  "barat1.png": {
+    "webp": "assets/images/webp/barat1.webp",
+    "w": 250,
+    "h": 518,
+    "kb": 14,
+    "oldKb": 77
+  },
+  "barat2.png": {
+    "webp": "assets/images/webp/barat2.webp",
+    "w": 250,
+    "h": 518,
+    "kb": 6,
+    "oldKb": 35
+  },
+  "barat3.png": {
+    "webp": "assets/images/webp/barat3.webp",
+    "w": 249,
+    "h": 518,
+    "kb": 18,
+    "oldKb": 153
+  },
+  "barat4.png": {
+    "webp": "assets/images/webp/barat4.webp",
+    "w": 250,
+    "h": 518,
+    "kb": 16,
+    "oldKb": 109
+  },
+  "halaman detail dengan komentar.jpg": {
+    "webp": "assets/images/webp/halaman detail dengan komentar.webp",
+    "w": 720,
+    "h": 1600,
+    "kb": 68,
+    "oldKb": 105
+  },
+  "hotel1.png": {
+    "webp": "assets/images/webp/hotel1.webp",
+    "w": 1600,
+    "h": 788,
+    "kb": 34,
+    "oldKb": 200
+  },
+  "hotel2.png": {
+    "webp": "assets/images/webp/hotel2.webp",
+    "w": 1600,
+    "h": 732,
+    "kb": 36,
+    "oldKb": 208
+  },
+  "koleksi screen.jpg": {
+    "webp": "assets/images/webp/koleksi screen.webp",
+    "w": 720,
+    "h": 1600,
+    "kb": 47,
+    "oldKb": 80
+  },
+  "kuis leaderboard.jpg": {
+    "webp": "assets/images/webp/kuis leaderboard.webp",
+    "w": 720,
+    "h": 1600,
+    "kb": 25,
+    "oldKb": 53
+  },
+  "rakamin.png": {
+    "webp": "assets/images/webp/rakamin.webp",
+    "w": 210,
+    "h": 427,
+    "kb": 11,
+    "oldKb": 92
+  },
+  "rayhan foto wisuda.jpg": {
+    "webp": "assets/images/webp/rayhan foto wisuda.webp",
+    "w": 354,
+    "h": 472,
+    "kb": 7,
+    "oldKb": 90
+  },
+  "reactnative.png": {
+    "webp": "assets/images/webp/reactnative.webp",
+    "w": 987,
+    "h": 762,
+    "kb": 72,
+    "oldKb": 443
+  },
+  "scan screen.jpg": {
+    "webp": "assets/images/webp/scan screen.webp",
+    "w": 720,
+    "h": 1600,
+    "kb": 20,
+    "oldKb": 44
+  },
+  "scfs1.png": {
+    "webp": "assets/images/webp/scfs1.webp",
+    "w": 1600,
+    "h": 787,
+    "kb": 31,
+    "oldKb": 470
+  },
+  "scfs2.png": {
+    "webp": "assets/images/webp/scfs2.webp",
+    "w": 1600,
+    "h": 787,
+    "kb": 37,
+    "oldKb": 173
+  },
+  "scfsmobile1.png": {
+    "webp": "assets/images/webp/scfsmobile1.webp",
+    "w": 511,
+    "h": 945,
+    "kb": 8,
+    "oldKb": 28
+  },
+  "scfsmobile2.png": {
+    "webp": "assets/images/webp/scfsmobile2.webp",
+    "w": 511,
+    "h": 943,
+    "kb": 13,
+    "oldKb": 62
+  },
+  "setelah login.jpg": {
+    "webp": "assets/images/webp/setelah login.webp",
+    "w": 720,
+    "h": 1600,
+    "kb": 36,
+    "oldKb": 64
+  },
+  "sipetam1.png": {
+    "webp": "assets/images/webp/sipetam1.webp",
+    "w": 1600,
+    "h": 762,
+    "kb": 111,
+    "oldKb": 1749
+  },
+  "sipetam2.png": {
+    "webp": "assets/images/webp/sipetam2.webp",
+    "w": 1600,
+    "h": 762,
+    "kb": 46,
+    "oldKb": 119
+  },
+  "sirekap1.png": {
+    "webp": "assets/images/webp/sirekap1.webp",
+    "w": 558,
+    "h": 273,
+    "kb": 14,
+    "oldKb": 101
+  },
+  "sirekap2.png": {
+    "webp": "assets/images/webp/sirekap2.webp",
+    "w": 558,
+    "h": 268,
+    "kb": 4,
+    "oldKb": 24
+  },
+  "sirekap3.png": {
+    "webp": "assets/images/webp/sirekap3.webp",
+    "w": 558,
+    "h": 537,
+    "kb": 16,
+    "oldKb": 177
+  },
+  "sirekap4.png": {
+    "webp": "assets/images/webp/sirekap4.webp",
+    "w": 558,
+    "h": 455,
+    "kb": 13,
+    "oldKb": 98
+  },
+  "sso1.png": {
+    "webp": "assets/images/webp/sso1.webp",
+    "w": 1600,
+    "h": 774,
+    "kb": 35,
+    "oldKb": 102
+  },
+  "sso2.png": {
+    "webp": "assets/images/webp/sso2.webp",
+    "w": 1600,
+    "h": 786,
+    "kb": 27,
+    "oldKb": 99
+  },
+  "study1.png": {
+    "webp": "assets/images/webp/study1.webp",
+    "w": 253,
+    "h": 562,
+    "kb": 4,
+    "oldKb": 27
+  },
+  "study2.png": {
+    "webp": "assets/images/webp/study2.webp",
+    "w": 253,
+    "h": 562,
+    "kb": 10,
+    "oldKb": 47
+  },
+  "study3.png": {
+    "webp": "assets/images/webp/study3.webp",
+    "w": 253,
+    "h": 562,
+    "kb": 4,
+    "oldKb": 28
+  },
+  "study4.png": {
+    "webp": "assets/images/webp/study4.webp",
+    "w": 253,
+    "h": 562,
+    "kb": 4,
+    "oldKb": 22
+  },
+  "tokoraymobile1.png": {
+    "webp": "assets/images/webp/tokoraymobile1.webp",
+    "w": 616,
+    "h": 903,
+    "kb": 31,
+    "oldKb": 175
+  },
+  "tokoraymobile2.png": {
+    "webp": "assets/images/webp/tokoraymobile2.webp",
+    "w": 617,
+    "h": 905,
+    "kb": 30,
+    "oldKb": 107
+  },
+  "tokoraymobile3.png": {
+    "webp": "assets/images/webp/tokoraymobile3.webp",
+    "w": 617,
+    "h": 905,
+    "kb": 21,
+    "oldKb": 110
+  },
+  "tokorayweb1.png": {
+    "webp": "assets/images/webp/tokorayweb1.webp",
+    "w": 1600,
+    "h": 760,
+    "kb": 42,
+    "oldKb": 399
+  },
+  "tokorayweb2.png": {
+    "webp": "assets/images/webp/tokorayweb2.webp",
+    "w": 1600,
+    "h": 769,
+    "kb": 44,
+    "oldKb": 171
+  },
+  "tokorayweb3.png": {
+    "webp": "assets/images/webp/tokorayweb3.webp",
+    "w": 1600,
+    "h": 767,
+    "kb": 33,
+    "oldKb": 143
+  },
+  "udemy.jpg": {
+    "webp": "assets/images/webp/udemy.webp",
+    "w": 1600,
+    "h": 1190,
+    "kb": 40,
+    "oldKb": 219
+  },
+  "udemy2.jpg": {
+    "webp": "assets/images/webp/udemy2.webp",
+    "w": 1600,
+    "h": 1190,
+    "kb": 43,
+    "oldKb": 234
+  }
+}

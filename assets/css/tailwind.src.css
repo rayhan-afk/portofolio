@@ -1,0 +1,18 @@
+/* Source file for the compiled stylesheet.
+   Build with:  npm run build:css   (see package.json / README.md)
+   Output:      assets/css/tailwind.css                              */
+
+@import "tailwindcss" source(none);
+
+@source "../../index.html";
+@source "../js/script.js";
+
+@theme {
+    --color-dark: #0f172a;
+    --color-card: #1e293b;
+    --color-accent: #8b5cf6;
+    --color-accentHover: #7c3aed;
+    --color-electric: #3b82f6;
+
+    --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "rayhan-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Personal portfolio site — static HTML with a locally compiled Tailwind stylesheet.",
+  "scripts": {
+    "build:css": "node build-css.js"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^4.3.3"
+  }
+}

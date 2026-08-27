@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rayhan Abduhuda — Fullstack Developer (Laravel &amp; Flutter)</title>
+    <meta name="description" content="Fullstack Developer specializing in Laravel and Flutter. I build payment, wallet and marketplace systems end to end — from database design to hosting deployment.">
+    <meta name="author" content="Rayhan Abduhuda">
+
+    <!-- Replace with your real deployed URL if you host somewhere else. -->
+    <link rel="canonical" href="https://rayhan-afk.github.io/portofolio/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rayhan-afk.github.io/portofolio/">
+    <meta property="og:title" content="Rayhan Abduhuda — Fullstack Developer (Laravel &amp; Flutter)">
+    <meta property="og:description" content="Laravel and Flutter developer. Payment gateways, multi-wallet ledgers, marketplace platforms — 2,300+ automated tests across shipped systems.">
+    <meta property="og:image" content="https://rayhan-afk.github.io/portofolio/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rayhan Abduhuda — Fullstack Developer (Laravel &amp; Flutter)">
+    <meta name="twitter:description" content="Laravel and Flutter developer. Payment gateways, multi-wallet ledgers, marketplace platforms.">
+    <meta name="twitter:image" content="https://rayhan-afk.github.io/portofolio/assets/og-image.png">
+    <meta name="theme-color" content="#0f172a">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Compiled locally with Tailwind CLI (npm run build:css) — no browser-side compile. -->
+    <link rel="stylesheet" href="assets/css/tailwind.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Icon fonts load without blocking first paint. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    </noscript>
+</head>
+<body class="bg-dark text-slate-300 font-sans selection:bg-accent selection:text-white overflow-x-hidden">
+
+    <a href="#home" class="sr-only focus:not-sr-only focus:absolute focus:z-[200] focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:rounded-lg">Skip to content</a>
+
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-white tracking-wide">
+                Rayhan<span class="text-accent">.dev</span>
+            </a>
+
+            <div class="hidden lg:flex space-x-6 items-center">
+                <a href="#home" class="nav-link text-sm text-slate-300 hover:text-accent transition-colors">Home</a>
+                <a href="#about" class="nav-link text-sm text-slate-300 hover:text-accent transition-colors">About</a>
+                <a href="#portfolio-project" class="nav-link text-sm text-slate-300 hover:text-accent transition-colors">Portfolio Project</a>
+                <a href="#projects" class="nav-link text-sm text-slate-300 hover:text-accent transition-colors">Projects</a>
+                <a href="#experience" class="nav-link text-sm text-slate-300 hover:text-accent transition-colors">Experience</a>
+                <a href="#skills" class="nav-link text-sm text-slate-300 hover:text-accent transition-colors">Skills</a>
+                <a href="#certificates" class="nav-link text-sm text-slate-300 hover:text-accent transition-colors">Certificates</a>
+                <a href="#contact" class="px-5 py-2 rounded-full border border-accent text-accent hover:bg-accent hover:text-white transition-all duration-300 text-sm">Contact Me</a>
+            </div>
+
+            <button id="menu-btn" class="lg:hidden text-white rounded p-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-dark/95 backdrop-blur-lg border-b border-gray-800 p-6 flex-col space-y-4 lg:hidden shadow-2xl">
+            <a href="#home" class="block text-slate-200 hover:text-accent">Home</a>
+            <a href="#about" class="block text-slate-200 hover:text-accent">About</a>
+            <a href="#portfolio-project" class="block text-slate-200 hover:text-accent">Portfolio Project</a>
+            <a href="#projects" class="block text-slate-200 hover:text-accent">Projects</a>
+            <a href="#experience" class="block text-slate-200 hover:text-accent">Experience</a>
+            <a href="#skills" class="block text-slate-200 hover:text-accent">Skills</a>
+            <a href="#certificates" class="block text-slate-200 hover:text-accent">Certificates</a>
+            <a href="#contact" class="block text-accent font-semibold">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative pt-28 pb-16">
+        <div class="absolute top-20 left-10 w-72 h-72 bg-accent/20 rounded-full blur-[100px] -z-10 animate-pulse-slow"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-electric/10 rounded-full blur-[100px] -z-10"></div>
+
+        <div class="container mx-auto px-6 text-center z-10">
+            <div class="mb-8 relative inline-block group">
+                <div class="absolute -inset-1 bg-gradient-to-r from-accent to-electric rounded-full blur opacity-50 group-hover:opacity-100 transition duration-500"></div>
+                <img src="assets/images/webp/rayhan foto wisuda.webp" width="354" height="472" alt="Portrait of Rayhan Abduhuda"
+                     class="relative w-40 h-40 md:w-52 md:h-52 object-cover rounded-full border-4 border-dark shadow-2xl">
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4 reveal">
+                Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-accent to-electric">Rayhan Abduhuda</span>
+            </h1>
+
+            <p class="text-lg md:text-xl text-slate-300 mb-6 font-light reveal delay-200">
+                Fullstack Developer &nbsp;·&nbsp; Laravel &amp; Flutter
+            </p>
+
+            <p class="max-w-2xl mx-auto text-slate-400 mb-10 reveal delay-300">
+                I build systems that move real money — digital wallets, QR payments, payment gateway and shipping integrations — from database design through to hosting deployment.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto mb-10 reveal delay-300">
+                <div class="bg-card/40 border border-white/5 rounded-2xl py-5 px-3">
+                    <div class="text-3xl font-bold text-white">2,300+</div>
+                    <div class="text-xs text-slate-400 mt-1">Automated tests written</div>
+                </div>
+                <div class="bg-card/40 border border-white/5 rounded-2xl py-5 px-3">
+                    <div class="text-3xl font-bold text-white">10+</div>
+                    <div class="text-xs text-slate-400 mt-1">Projects shipped</div>
+                </div>
+                <div class="bg-card/40 border border-white/5 rounded-2xl py-5 px-3">
+                    <div class="text-3xl font-bold text-white">6</div>
+                    <div class="text-xs text-slate-400 mt-1">Enterprise systems</div>
+                </div>
+                <div class="bg-card/40 border border-white/5 rounded-2xl py-5 px-3">
+                    <div class="text-3xl font-bold text-white">2</div>
+                    <div class="text-xs text-slate-400 mt-1">Payment systems built</div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4 reveal delay-400">
+                <a href="#portfolio-project" class="px-8 py-3 rounded-full bg-accent hover:bg-accentHover text-white font-semibold shadow-[0_0_20px_rgba(139,92,246,0.5)] transition-all transform hover:-translate-y-1">
+                    View Projects
+                </a>
+                <a href="assets/Rayhan-Abduhuda-CV.pdf" download class="px-8 py-3 rounded-full border border-gray-600 hover:border-white text-white transition-all hover:bg-white/5">
+                    <i class="fas fa-download mr-2" aria-hidden="true"></i>Download CV
+                </a>
+                <a href="#contact" class="px-8 py-3 rounded-full border border-gray-600 hover:border-white text-white transition-all hover:bg-white/5">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="py-24 bg-dark relative">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+                    About <span class="text-accent">Me</span>
+                </h2>
+
+                <div class="space-y-6 text-slate-400 leading-relaxed text-lg">
+                    <p>
+                        Fullstack Developer specializing in <span class="text-accent font-semibold">Laravel</span> and modern web architecture, with hands-on experience delivering production-grade applications from database design through to hosting deployment. Skilled across both backend and frontend, and experienced in cross-platform mobile development with <span class="text-accent font-semibold">Flutter</span> and Dart.
+                    </p>
+
+                    <p>
+                        Most of my work sits close to money and access control: multi-tier wallet ledgers, QR-based cashless payments, payment gateway and shipping integrations, role-based dashboards, and immutable audit trails. I build them on layered architectures with transaction-safe data handling, and I keep them covered by automated tests — <span class="text-white font-medium">1,168 tests</span> on the SCFS finance platform and <span class="text-white font-medium">1,223 tests</span> on the TokoRay marketplace.
+                    </p>
+
+                    <p>
+                        Proven ability to integrate Laravel and Flutter through RESTful APIs to build connected, end-to-end systems. Holds a Bachelor's degree in Informatics Engineering from <span class="text-white">Universitas Pasundan</span>, and combines strong engineering fundamentals with a drive to turn ideas into reliable, useful products.
+                    </p>
+                </div>
+
+                <div class="mt-12 flex justify-center items-center gap-3">
+                    <div class="h-px w-12 bg-gray-800"></div>
+                    <div class="w-2 h-2 rounded-full bg-accent/50"></div>
+                    <div class="h-px w-12 bg-gray-800"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PORTFOLIO PROJECT — TOKORAY ============ -->
+    <section id="portfolio-project" class="py-24 bg-dark relative overflow-hidden">
+        <div class="absolute -top-20 -left-32 w-[28rem] h-[28rem] bg-[#f0452f]/10 rounded-full blur-[130px] -z-10"></div>
+        <div class="absolute bottom-0 right-0 w-[26rem] h-[26rem] bg-accent/10 rounded-full blur-[130px] -z-10"></div>
+
+        <div class="container mx-auto px-6">
+
+            <div class="text-center mb-16 reveal">
+                <span class="text-[#f0452f] tracking-[0.3em] text-xs font-bold uppercase mb-3 block">Flagship build</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-4">Portfolio <span class="text-[#f0452f]">Project</span></h2>
+                <p class="text-slate-400 max-w-2xl mx-auto">Three applications, one system, built solo: the API, the operator console, and the shopping app.</p>
+            </div>
+
+            <div class="relative rounded-[2rem] border border-white/10 bg-gradient-to-br from-[#1a1027] via-card to-[#160f1f] p-8 md:p-12 overflow-hidden reveal">
+                <div class="absolute top-0 right-0 w-72 h-72 bg-[#f0452f]/20 rounded-full blur-[100px]"></div>
+
+                <div class="grid lg:grid-cols-2 gap-12 items-center relative z-10">
+
+                    <div>
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#f0452f] to-[#ff7a45] flex items-center justify-center shadow-[0_0_30px_rgba(240,69,47,0.45)]">
+                                <i class="fas fa-bolt text-white text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-3xl md:text-4xl font-bold text-white leading-none">TokoRay</h3>
+                                <p class="text-[#f0452f] text-sm font-medium mt-1">Multi-Vendor E-Commerce Platform</p>
+                            </div>
+                        </div>
+
+                        <p class="text-slate-300 leading-relaxed mb-5">
+                            Not a single-seller store. TokoRay is a marketplace where many sellers trade under one platform, with real payment through Midtrans, shipping rates and courier tracking through RajaOngkir, multiple warehouses, platform commission, and payouts to seller bank accounts.
+                        </p>
+                        <p class="text-slate-400 leading-relaxed mb-6">
+                            Behind it: a layered REST API with 36 domain modules and 60 data models, a 44-page operator console covering catalog, orders, refunds, disputes, vouchers, flash sales, payouts and feature flags, and a Flutter app for buyers. Every write on the money path is guarded by pessimistic locking and idempotency keys, and 1,223 automated tests keep one cart from ever becoming five orders.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-8">
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-green-500/10 text-green-300 border border-green-500/20">Node.js</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-white/5 text-slate-300 border border-white/10">Express 5</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-blue-500/10 text-blue-300 border border-blue-500/20">PostgreSQL</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">Prisma</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-red-500/10 text-red-300 border border-red-500/20">Redis</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Flutter</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-white/5 text-slate-200 border border-white/10">Next.js 16</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-sky-500/10 text-sky-300 border border-sky-500/20">Midtrans</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-orange-500/10 text-orange-300 border border-orange-500/20">RajaOngkir</span>
+                            <span class="px-3 py-1.5 text-xs rounded-full bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">Firebase FCM</span>
+                        </div>
+
+                        <div class="flex flex-wrap gap-3">
+                            <button data-project="tokoray-web" class="js-open-project px-6 py-3 rounded-full bg-[#f0452f] hover:bg-[#d93b26] text-white font-semibold text-sm shadow-[0_0_25px_rgba(240,69,47,0.4)] transition-all transform hover:-translate-y-1">
+                                <i class="fas fa-server mr-2" aria-hidden="true"></i>Backend &amp; Console
+                            </button>
+                            <button data-project="tokoray-mobile" class="js-open-project px-6 py-3 rounded-full border border-white/20 hover:border-white text-white font-semibold text-sm transition-all hover:bg-white/5 transform hover:-translate-y-1">
+                                <i class="fas fa-mobile-screen mr-2" aria-hidden="true"></i>Mobile App
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden border border-white/10 shadow-2xl bg-[#0b1120]">
+                            <div class="flex items-center gap-1.5 px-4 py-3 bg-[#0f172a] border-b border-white/10">
+                                <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-yellow-500/80"></span>
+                                <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
+                                <span class="ml-3 text-[11px] text-slate-400 font-mono truncate">admin.tokoray.local/analytics</span>
+                            </div>
+                            <img src="assets/images/webp/tokorayweb2.webp" width="1600" height="769" loading="lazy" decoding="async"
+                                 alt="TokoRay analytics dashboard showing GMV, order funnel and top stores"
+                                 class="w-full object-cover object-top">
+                        </div>
+
+                        <div class="absolute -bottom-8 -right-2 md:right-4 w-32 md:w-40 rounded-[1.6rem] border-[6px] border-gray-800 bg-gray-900 shadow-2xl overflow-hidden hidden sm:block">
+                            <img src="assets/images/webp/tokoraymobile1.webp" width="616" height="903" loading="lazy" decoding="async"
+                                 alt="TokoRay buyer app home screen" class="w-full object-cover">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 lg:grid-cols-5 gap-4 mt-8 reveal">
+                <div class="bg-card/40 border border-white/5 rounded-2xl p-5 text-center hover:border-[#f0452f]/40 transition-colors">
+                    <div class="text-2xl md:text-3xl font-bold text-white">1,223</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Automated tests</div>
+                </div>
+                <div class="bg-card/40 border border-white/5 rounded-2xl p-5 text-center hover:border-[#f0452f]/40 transition-colors">
+                    <div class="text-2xl md:text-3xl font-bold text-white">36</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Domain modules</div>
+                </div>
+                <div class="bg-card/40 border border-white/5 rounded-2xl p-5 text-center hover:border-[#f0452f]/40 transition-colors">
+                    <div class="text-2xl md:text-3xl font-bold text-white">60</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Database models</div>
+                </div>
+                <div class="bg-card/40 border border-white/5 rounded-2xl p-5 text-center hover:border-[#f0452f]/40 transition-colors">
+                    <div class="text-2xl md:text-3xl font-bold text-white">44</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Console pages</div>
+                </div>
+                <div class="bg-card/40 border border-white/5 rounded-2xl p-5 text-center col-span-2 lg:col-span-1 hover:border-[#f0452f]/40 transition-colors">
+                    <div class="text-2xl md:text-3xl font-bold text-white">288</div>
+                    <div class="text-[11px] text-slate-400 mt-1">Commits</div>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-8 reveal">
+
+                <div class="bg-card/30 border border-white/5 rounded-2xl p-6 hover:border-[#f0452f]/40 hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-[#f0452f]/10 border border-[#f0452f]/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-credit-card text-[#f0452f]" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-2">Midtrans payment gateway</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Snap checkout, webhooks verified against a timing-safe SHA-512 signature, and idempotency keys that make a repeated callback harmless.</p>
+                </div>
+
+                <div class="bg-card/30 border border-white/5 rounded-2xl p-6 hover:border-[#f0452f]/40 hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-orange-500/10 border border-orange-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-truck-fast text-orange-400" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-2">RajaOngkir shipping</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Region search ranked from village up to province, multi-courier rates quoted from the nearest warehouse, and signature-verified tracking webhooks.</p>
+                </div>
+
+                <div class="bg-card/30 border border-white/5 rounded-2xl p-6 hover:border-[#f0452f]/40 hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-scale-balanced text-emerald-400" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-2">A ledger that cannot drift</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Each store wallet is row-locked with <span class="font-mono text-[11px] text-slate-300">SELECT … FOR UPDATE</span> across commission, settlement, refund and payout.</p>
+                </div>
+
+                <div class="bg-card/30 border border-white/5 rounded-2xl p-6 hover:border-[#f0452f]/40 hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-violet-500/10 border border-violet-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-store text-violet-400" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-2">Multi-tenant with store RBAC</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Seller data isolation is enforced in middleware, with fine-grained staff roles per store and an audit trail that cannot be edited.</p>
+                </div>
+
+                <div class="bg-card/30 border border-white/5 rounded-2xl p-6 hover:border-[#f0452f]/40 hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-comments text-sky-400" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-2">Live chat and notifications</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Buyer-to-seller chat streams over Server-Sent Events, with FCM push and transactional email; device tokens are released on logout.</p>
+                </div>
+
+                <div class="bg-card/30 border border-white/5 rounded-2xl p-6 hover:border-[#f0452f]/40 hover:-translate-y-1 transition-all duration-300">
+                    <div class="w-11 h-11 rounded-xl bg-yellow-500/10 border border-yellow-500/20 flex items-center justify-center mb-4">
+                        <i class="fas fa-magnifying-glass-chart text-yellow-400" aria-hidden="true"></i>
+                    </div>
+                    <h4 class="text-white font-semibold mb-2">Discovery and promotions</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">PostgreSQL full-text search with pg_trgm and faceted filters, plus vouchers, flash sales, loyalty points, wishlists and photo reviews.</p>
+                </div>
+
+            </div>
+
+            <div class="mt-12 reveal">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-1 w-12 bg-[#f0452f] rounded-full"></div>
+                    <h3 class="text-xl font-bold text-white">Inside the product</h3>
+                </div>
+
+                <div class="grid lg:grid-cols-5 gap-6 items-start">
+
+                    <div class="lg:col-span-3">
+                        <button data-project="tokoray-web" class="js-open-project block w-full text-left group rounded-2xl overflow-hidden border border-gray-800 hover:border-[#f0452f]/50 transition-all duration-300">
+                            <div class="relative">
+                                <img src="assets/images/webp/tokorayweb1.webp" width="1600" height="760" loading="lazy" decoding="async"
+                                     alt="TokoRay operator console sign-in page"
+                                     class="w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]">
+                                <div class="absolute bottom-0 inset-x-0 h-2/5 bg-gradient-to-t from-black via-black/75 to-transparent"></div>
+                                <div class="absolute bottom-0 inset-x-0 p-5">
+                                    <span class="px-2 py-0.5 text-[10px] font-bold rounded-full bg-[#f0452f] text-white">OPERATOR CONSOLE</span>
+                                    <h4 class="text-white font-semibold mt-2">One sign-in for platform admins and sellers — the order queue is waiting behind it</h4>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+
+                    <div class="lg:col-span-2 grid grid-cols-2 gap-4">
+                        <button data-project="tokoray-mobile" class="js-open-project group rounded-[1.6rem] overflow-hidden border-[6px] border-gray-800 bg-gray-900 hover:border-[#f0452f]/40 transition-all duration-300 hover:-translate-y-2">
+                            <img src="assets/images/webp/tokoraymobile2.webp" width="617" height="905" loading="lazy" decoding="async"
+                                 alt="TokoRay checkout with shipping options and vouchers"
+                                 class="w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </button>
+                        <button data-project="tokoray-mobile" class="js-open-project group rounded-[1.6rem] overflow-hidden border-[6px] border-gray-800 bg-gray-900 hover:border-[#f0452f]/40 transition-all duration-300 hover:-translate-y-2">
+                            <img src="assets/images/webp/tokoraymobile3.webp" width="617" height="905" loading="lazy" decoding="async"
+                                 alt="TokoRay buyer account screen with balance, points and orders"
+                                 class="w-full object-cover transition-transform duration-500 group-hover:scale-105">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ OTHER PROJECTS ============ -->
+    <section id="projects" class="py-24 bg-[#0b1120] relative">
+        <div class="absolute top-1/4 right-0 w-64 h-64 bg-accent/5 rounded-full blur-[80px] -z-10"></div>
+        <div class="absolute bottom-1/4 left-0 w-64 h-64 bg-blue-500/5 rounded-full blur-[80px] -z-10"></div>
+
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Other <span class="text-accent">Projects</span></h2>
+                <p class="text-slate-400">Enterprise and financial systems I have delivered.</p>
+            </div>
+
+            <div class="mb-24 reveal">
+                <div class="flex items-center gap-4 mb-10">
+                    <div class="h-1 w-12 bg-accent rounded-full"></div>
+                    <h3 class="text-2xl font-bold text-white">Mobile Applications</h3>
+                </div>
+                <div id="mobile-projects" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center"></div>
+            </div>
+
+            <div class="reveal">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-1 w-12 bg-electric rounded-full"></div>
+                    <h3 class="text-2xl font-bold text-white">Web Development &amp; Systems</h3>
+                </div>
+                <div id="web-projects" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECT MODAL ============ -->
+    <div id="project-modal" class="fixed inset-0 z-[100] hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" data-backdrop></div>
+
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl px-4">
+            <div class="bg-card rounded-2xl shadow-2xl overflow-hidden border border-gray-700 animate-modal-pop">
+
+                <div class="relative h-64 md:h-[500px] bg-black flex items-center justify-center">
+                    <img id="modal-image" src="" alt="" class="max-w-full max-h-full object-contain transition-opacity duration-300">
+
+                    <button data-close class="absolute top-4 right-4 z-20 bg-black/60 hover:bg-red-500 text-white w-10 h-10 rounded-full transition-colors flex items-center justify-center border border-white/10" aria-label="Close dialog">
+                        <i class="fas fa-times" aria-hidden="true"></i>
+                    </button>
+
+                    <button id="btn-prev" data-prev class="absolute left-4 z-10 bg-black/60 hover:bg-accent text-white w-12 h-12 rounded-full border border-white/10 flex items-center justify-center transition-all hover:scale-110" aria-label="Previous screenshot">
+                        <i class="fas fa-chevron-left text-xl" aria-hidden="true"></i>
+                    </button>
+
+                    <button id="btn-next" data-next class="absolute right-4 z-10 bg-black/60 hover:bg-accent text-white w-12 h-12 rounded-full border border-white/10 flex items-center justify-center transition-all hover:scale-110" aria-label="Next screenshot">
+                        <i class="fas fa-chevron-right text-xl" aria-hidden="true"></i>
+                    </button>
+
+                    <p id="slide-counter" class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/70 px-4 py-1 rounded-full text-sm text-white font-mono border border-white/10">1 / 1</p>
+                </div>
+
+                <div class="p-8 max-h-[40vh] overflow-y-auto custom-scrollbar">
+                    <div class="flex justify-between items-start mb-4 gap-4">
+                        <div>
+                            <h3 id="modal-title" class="text-2xl md:text-3xl font-bold text-white mb-2">Project title</h3>
+                            <div id="modal-tech" class="flex flex-wrap gap-2"></div>
+                        </div>
+                        <a id="modal-repo" href="#" target="_blank" rel="noopener" class="text-slate-400 hover:text-white text-2xl transition-colors shrink-0" aria-label="Open repository on GitHub">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+
+                    <div class="space-y-4 text-slate-300 text-sm md:text-base leading-relaxed">
+                        <p id="modal-desc"></p>
+
+                        <div class="bg-dark/50 p-5 rounded-xl border border-gray-700 mt-6">
+                            <h4 class="text-accent font-semibold mb-3 border-b border-gray-700 pb-2 inline-block">What it does</h4>
+                            <ul id="modal-features" class="list-disc list-inside space-y-2 text-slate-400"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="py-24 bg-dark relative">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-accent tracking-widest text-sm font-bold uppercase mb-2 block">Timeline</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Experience</h2>
+                <p class="text-slate-400 mt-4">What I have been building, and when.</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto relative reveal">
+                <div class="absolute left-3 top-2 bottom-2 w-px bg-gray-800" aria-hidden="true"></div>
+
+                <ol class="space-y-10">
+                    <li class="relative pl-12 md:pl-16">
+                        <span class="absolute left-0 top-1 w-6 h-6 rounded-full bg-[#f0452f]/20 border-2 border-[#f0452f] flex items-center justify-center" aria-hidden="true">
+                            <span class="w-2 h-2 rounded-full bg-[#f0452f]"></span>
+                        </span>
+                        <p class="text-[#f0452f] text-sm font-semibold mb-1">Aug 2026 — Present</p>
+                        <h3 class="text-xl font-bold text-white">TokoRay — Multi-Vendor Marketplace</h3>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Solo build of the REST API, the admin and seller console, and the Flutter buyer app. Midtrans payments, RajaOngkir shipping, multi-warehouse stock, commission and payout flows, 1,223 automated tests.</p>
+                    </li>
+
+                    <li class="relative pl-12 md:pl-16">
+                        <span class="absolute left-0 top-1 w-6 h-6 rounded-full bg-accent/20 border-2 border-accent flex items-center justify-center" aria-hidden="true">
+                            <span class="w-2 h-2 rounded-full bg-accent"></span>
+                        </span>
+                        <p class="text-accent text-sm font-semibold mb-1">Apr 2026 — Present</p>
+                        <h3 class="text-xl font-bold text-white">SCFS Mobile — Scholarship Wallet App</h3>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Flutter app that lets scholarship recipients spend their stipend cashless on campus, using time-limited QR codes and encrypted local token storage against a Sanctum-secured API.</p>
+                    </li>
+
+                    <li class="relative pl-12 md:pl-16">
+                        <span class="absolute left-0 top-1 w-6 h-6 rounded-full bg-accent/20 border-2 border-accent flex items-center justify-center" aria-hidden="true">
+                            <span class="w-2 h-2 rounded-full bg-accent"></span>
+                        </span>
+                        <p class="text-accent text-sm font-semibold mb-1">Apr 2026 — May 2026</p>
+                        <h3 class="text-xl font-bold text-white">SIPETAM — Cemetery Plot Booking System</h3>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Laravel and React SPA over Inertia.js with an interactive booking engine, accrual-basis accounting, PDF receipts and Excel financial reports, deployed on shared hosting.</p>
+                    </li>
+
+                    <li class="relative pl-12 md:pl-16">
+                        <span class="absolute left-0 top-1 w-6 h-6 rounded-full bg-electric/20 border-2 border-electric flex items-center justify-center" aria-hidden="true">
+                            <span class="w-2 h-2 rounded-full bg-electric"></span>
+                        </span>
+                        <p class="text-electric text-sm font-semibold mb-1">Mar 2026 — Present</p>
+                        <h3 class="text-xl font-bold text-white">SCFS Web — Supply Chain Financing Platform</h3>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Financial platform routing funds from donors through the LKBB treasury to merchants, suppliers and students. Transaction-safe multi-wallet ledger, six-role dashboards, multi-level approval, 1,168 tests under CI.</p>
+                    </li>
+
+                    <li class="relative pl-12 md:pl-16">
+                        <span class="absolute left-0 top-1 w-6 h-6 rounded-full bg-slate-500/20 border-2 border-slate-500 flex items-center justify-center" aria-hidden="true">
+                            <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+                        </span>
+                        <p class="text-slate-300 text-sm font-semibold mb-1">Earlier work</p>
+                        <h3 class="text-xl font-bold text-white">Enterprise IAM, SIREKAP, Hotel Management</h3>
+                        <p class="text-slate-400 text-sm mt-2 leading-relaxed">Keycloak single sign-on with a custom Java plugin for email OTP, an institutional data recap system with ArcGIS mapping, and a hotel reservation, invoicing and room-move system.</p>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="py-24 bg-[#0b1120] relative">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -z-10"></div>
+
+        <div class="container mx-auto px-6 text-center">
+
+            <div class="mb-16 reveal">
+                <span class="text-accent tracking-widest text-sm font-bold uppercase mb-2 block">Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white">Technical Skills</h2>
+                <p class="text-slate-400 mt-4">Tools I use in production, not just in tutorials.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 items-start reveal delay-100">
+
+                <div class="bg-card/30 rounded-2xl p-8 border border-white/5 hover:border-accent/30 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-8 border-b-2 border-accent pb-2 inline-block">Mobile</h3>
+                    <div class="grid grid-cols-2 gap-y-8 gap-x-4 justify-items-center">
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-flutter-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#02569B] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Flutter</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-dart-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#0175C2] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Dart</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-diagram-project text-4xl md:text-5xl text-slate-500 group-hover:text-[#5B7CFA] transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Riverpod</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-kotlin-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#7F52FF] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Kotlin</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-react-original text-4xl md:text-5xl text-slate-500 group-hover:text-[#61DAFB] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">React Native</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-firebase-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#FFCA28] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Firebase &amp; FCM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card/30 rounded-2xl p-8 border border-white/5 hover:border-electric/30 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-8 border-b-2 border-electric pb-2 inline-block">Web &amp; Backend</h3>
+                    <div class="grid grid-cols-2 lg:grid-cols-3 gap-y-8 gap-x-3 justify-items-center">
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-laravel-original text-4xl text-slate-500 group-hover:text-[#ff2d20] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Laravel</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-php-plain text-4xl text-slate-500 group-hover:text-[#777bb4] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">PHP</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-livewire-plain text-4xl text-slate-500 group-hover:text-[#fb70a9] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Livewire</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-nodejs-plain text-4xl text-slate-500 group-hover:text-[#539e43] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Node.js</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-express-original text-4xl text-slate-500 group-hover:text-white transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Express</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-typescript-plain text-4xl text-slate-500 group-hover:text-[#3178c6] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">TypeScript</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-react-original text-4xl text-slate-500 group-hover:text-[#61DAFB] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">React</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-nextjs-plain text-4xl text-slate-500 group-hover:text-white transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Next.js</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-tailwindcss-original text-4xl text-slate-500 group-hover:text-[#38bdf8] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card/30 rounded-2xl p-8 border border-white/5 hover:border-emerald-500/30 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-8 border-b-2 border-emerald-500 pb-2 inline-block">Data &amp; Infra</h3>
+                    <div class="grid grid-cols-2 gap-y-8 gap-x-4 justify-items-center">
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-mysql-original text-4xl md:text-5xl text-slate-500 group-hover:text-[#00758f] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">MySQL</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-postgresql-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#336791] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">PostgreSQL</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-prisma-original text-4xl md:text-5xl text-slate-500 group-hover:text-white transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Prisma</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-redis-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#d82c20] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Redis</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-layer-group text-4xl md:text-5xl text-slate-500 group-hover:text-amber-400 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Queues &amp; Cache</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <img src="https://cdn.simpleicons.org/hostinger/673de6" width="48" height="48" loading="lazy" alt=""
+                                 class="w-10 h-10 md:w-12 md:h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Hosting &amp; Deploy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-card/30 rounded-2xl p-8 border border-white/5 hover:border-rose-500/30 transition-all duration-300">
+                    <h3 class="text-xl font-semibold text-white mb-8 border-b-2 border-rose-500 pb-2 inline-block">Architecture &amp; Quality</h3>
+                    <div class="grid grid-cols-2 gap-y-8 gap-x-4 justify-items-center">
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-sitemap text-4xl md:text-5xl text-slate-500 group-hover:text-purple-400 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Clean Arch &amp; DDD</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-credit-card text-4xl md:text-5xl text-slate-500 group-hover:text-[#f0452f] transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Payment Gateway</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-key text-4xl md:text-5xl text-slate-500 group-hover:text-amber-500 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">SSO / OAuth2</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-user-shield text-4xl md:text-5xl text-slate-500 group-hover:text-rose-400 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">RBAC &amp; Audit</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-jest-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#C21325] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Jest / PHPUnit</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-githubactions-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#2088FF] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">CI/CD</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-git-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#F05032] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Git / GitHub</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-tower-broadcast text-4xl md:text-5xl text-slate-500 group-hover:text-sky-400 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Realtime SSE</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CERTIFICATES ============ -->
+    <section id="certificates" class="py-20 bg-dark relative overflow-hidden">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Certifications &amp; <span class="text-accent">Awards</span></h2>
+                <p class="text-slate-400">Verified credentials.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 reveal">
+
+                <article class="group relative bg-card/50 border border-gray-800 p-4 rounded-2xl hover:border-accent/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden rounded-xl bg-gray-900">
+                        <img src="assets/images/webp/reactnative.webp" width="987" height="762" loading="lazy" decoding="async"
+                             alt="Meta React Native Specialization certificate"
+                             class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-white font-semibold text-lg">Meta React Native Specialization</h3>
+                        <p class="text-accent text-sm mt-1">Coursera · 2024</p>
+                        <a href="https://www.coursera.org/account/accomplishments/specialization/4DC988HZ2WMF" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-3 text-sm text-slate-300 hover:text-white">
+                            <i class="fas fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i> View credential
+                        </a>
+                    </div>
+                </article>
+
+                <article class="group relative bg-card/50 border border-gray-800 p-4 rounded-2xl hover:border-accent/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden rounded-xl bg-gray-900">
+                        <img src="assets/images/webp/udemy.webp" width="1600" height="1190" loading="lazy" decoding="async"
+                             alt="Flutter and Dart complete guide certificate"
+                             class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-white font-semibold text-lg">Flutter &amp; Dart — The Complete Guide</h3>
+                        <p class="text-accent text-sm mt-1">Udemy · 2023</p>
+                        <a href="https://www.udemy.com/certificate/UC-f8cb20fc-680b-47df-ae57-6ae126ebe1f3/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-3 text-sm text-slate-300 hover:text-white">
+                            <i class="fas fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i> View credential
+                        </a>
+                    </div>
+                </article>
+
+                <article class="group relative bg-card/50 border border-gray-800 p-4 rounded-2xl hover:border-accent/50 transition-all duration-300 hover:-translate-y-1">
+                    <div class="h-48 overflow-hidden rounded-xl bg-gray-900">
+                        <img src="assets/images/webp/udemy2.webp" width="1600" height="1190" loading="lazy" decoding="async"
+                             alt="Web and mobile designer certificate"
+                             class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity">
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-white font-semibold text-lg">Web &amp; Mobile Designer</h3>
+                        <p class="text-accent text-sm mt-1">Udemy · 2023</p>
+                        <a href="https://www.udemy.com/certificate/UC-ef69d9f1-8b3f-481d-a2f1-feab6c1c9215/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-3 text-sm text-slate-300 hover:text-white">
+                            <i class="fas fa-arrow-up-right-from-square text-xs" aria-hidden="true"></i> View credential
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="py-24 bg-dark relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl mx-auto bg-card/50 p-8 md:p-12 rounded-3xl border border-gray-800 shadow-2xl reveal">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-bold text-white mb-2">Let's <span class="text-accent">Connect</span></h2>
+                    <p class="text-slate-400">Open to fullstack and mobile roles, and to freelance work.</p>
+                </div>
+
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-4 md:gap-6">
+                    <a href="mailto:rayhanabduhuda19@gmail.com" class="flex items-center justify-center gap-3 bg-dark/50 px-8 py-4 rounded-xl border border-gray-700 hover:border-red-500 hover:-translate-y-1 transition-all duration-300 group w-full sm:w-auto">
+                        <i class="fas fa-envelope text-2xl text-slate-400 group-hover:text-red-500 transition-colors" aria-hidden="true"></i>
+                        <span class="text-white font-medium">Email</span>
+                    </a>
+
+                    <a href="https://wa.me/6285722085286" target="_blank" rel="noopener" class="flex items-center justify-center gap-3 bg-dark/50 px-8 py-4 rounded-xl border border-gray-700 hover:border-green-500 hover:-translate-y-1 transition-all duration-300 group w-full sm:w-auto">
+                        <i class="fab fa-whatsapp text-2xl text-slate-400 group-hover:text-green-500 transition-colors" aria-hidden="true"></i>
+                        <span class="text-white font-medium">WhatsApp</span>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/rayhan-abduhuda/" target="_blank" rel="noopener" class="flex items-center justify-center gap-3 bg-dark/50 px-8 py-4 rounded-xl border border-gray-700 hover:border-blue-500 hover:-translate-y-1 transition-all duration-300 group w-full sm:w-auto">
+                        <i class="fab fa-linkedin text-2xl text-slate-400 group-hover:text-blue-500 transition-colors" aria-hidden="true"></i>
+                        <span class="text-white font-medium">LinkedIn</span>
+                    </a>
+
+                    <a href="https://github.com/rayhan-afk" target="_blank" rel="noopener" class="flex items-center justify-center gap-3 bg-dark/50 px-8 py-4 rounded-xl border border-gray-700 hover:border-white hover:-translate-y-1 transition-all duration-300 group w-full sm:w-auto">
+                        <i class="fab fa-github text-2xl text-slate-400 group-hover:text-white transition-colors" aria-hidden="true"></i>
+                        <span class="text-white font-medium">GitHub</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/rayhannray_/" target="_blank" rel="noopener" class="flex items-center justify-center gap-3 bg-dark/50 px-8 py-4 rounded-xl border border-gray-700 hover:border-pink-500 hover:-translate-y-1 transition-all duration-300 group w-full sm:w-auto">
+                        <i class="fab fa-instagram text-2xl text-slate-400 group-hover:text-pink-500 transition-colors" aria-hidden="true"></i>
+                        <span class="text-white font-medium">Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#050914] py-8 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-slate-400 text-sm">&copy; 2026 Rayhan Abduhuda · Built with Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
