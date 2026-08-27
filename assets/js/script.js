@@ -195,12 +195,12 @@ const PROJECTS = [
         role: 'Final year thesis project',
         summary: 'QR-guided museum companion with quizzes, XP and a global leaderboard.',
         tech: ['Flutter', 'Dart', 'Provider', 'Firebase', 'REST API'],
-        cover: { src: 'assets/images/webp/koleksi screen.webp', w: 720, h: 1600 },
+        cover: { src: 'assets/images/webp/koleksi-screen.webp', w: 720, h: 1600 },
         images: [
-            { src: 'assets/images/webp/setelah login.webp', w: 720, h: 1600, caption: 'Home after sign-in' },
-            { src: 'assets/images/webp/scan screen.webp', w: 720, h: 1600, caption: 'Scan a collection QR code on site' },
-            { src: 'assets/images/webp/halaman detail dengan komentar.webp', w: 720, h: 1600, caption: 'Collection detail with visitor comments' },
-            { src: 'assets/images/webp/kuis leaderboard.webp', w: 720, h: 1600, caption: 'Quiz results and global leaderboard' }
+            { src: 'assets/images/webp/setelah-login.webp', w: 720, h: 1600, caption: 'Home after sign-in' },
+            { src: 'assets/images/webp/scan-screen.webp', w: 720, h: 1600, caption: 'Scan a collection QR code on site' },
+            { src: 'assets/images/webp/halaman-detail-dengan-komentar.webp', w: 720, h: 1600, caption: 'Collection detail with visitor comments' },
+            { src: 'assets/images/webp/kuis-leaderboard.webp', w: 720, h: 1600, caption: 'Quiz results and global leaderboard' }
         ],
         description: 'My final year thesis: a mobile companion for visitors of Museum Geologi Bandung. Scan a collection item to read about it, discuss it, then earn XP for what you learned — built in Flutter with Provider, backed by Firebase and an external API, and shipped for Android.',
         highlights: [

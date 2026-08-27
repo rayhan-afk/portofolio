@@ -27,8 +27,8 @@
     "kb": 16,
     "oldKb": 109
   },
-  "halaman detail dengan komentar.jpg": {
-    "webp": "assets/images/webp/halaman detail dengan komentar.webp",
+  "halaman-detail-dengan-komentar.jpg": {
+    "webp": "assets/images/webp/halaman-detail-dengan-komentar.webp",
     "w": 720,
     "h": 1600,
     "kb": 68,
@@ -48,15 +48,15 @@
     "kb": 36,
     "oldKb": 208
   },
-  "koleksi screen.jpg": {
-    "webp": "assets/images/webp/koleksi screen.webp",
+  "koleksi-screen.jpg": {
+    "webp": "assets/images/webp/koleksi-screen.webp",
     "w": 720,
     "h": 1600,
     "kb": 47,
     "oldKb": 80
   },
-  "kuis leaderboard.jpg": {
-    "webp": "assets/images/webp/kuis leaderboard.webp",
+  "kuis-leaderboard.jpg": {
+    "webp": "assets/images/webp/kuis-leaderboard.webp",
     "w": 720,
     "h": 1600,
     "kb": 25,
@@ -69,8 +69,8 @@
     "kb": 11,
     "oldKb": 92
   },
-  "rayhan foto wisuda.jpg": {
-    "webp": "assets/images/webp/rayhan foto wisuda.webp",
+  "rayhan-foto-wisuda.jpg": {
+    "webp": "assets/images/webp/rayhan-foto-wisuda.webp",
     "w": 354,
     "h": 472,
     "kb": 7,
@@ -83,8 +83,8 @@
     "kb": 72,
     "oldKb": 443
   },
-  "scan screen.jpg": {
-    "webp": "assets/images/webp/scan screen.webp",
+  "scan-screen.jpg": {
+    "webp": "assets/images/webp/scan-screen.webp",
     "w": 720,
     "h": 1600,
     "kb": 20,
@@ -118,8 +118,8 @@
     "kb": 13,
     "oldKb": 62
   },
-  "setelah login.jpg": {
-    "webp": "assets/images/webp/setelah login.webp",
+  "setelah-login.jpg": {
+    "webp": "assets/images/webp/setelah-login.webp",
     "w": 720,
     "h": 1600,
     "kb": 36,
