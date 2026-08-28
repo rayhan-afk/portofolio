@@ -600,7 +600,7 @@
     </section>
 
     <!-- ============ SKILLS ============ -->
-    <section id="skills" class="py-24 bg-[#0b1120] relative">
+    <section id="skills" class="py-24 bg-[#0b1120] relative overflow-hidden">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -z-10"></div>
 
         <div class="container mx-auto px-6 text-center">
@@ -610,6 +610,8 @@
                 <h2 class="text-4xl md:text-5xl font-bold text-white">Technical Skills</h2>
                 <p class="text-slate-400 mt-4">Tools I use in production, not just in tutorials.</p>
             </div>
+
+            <h3 class="text-sm uppercase tracking-[0.2em] text-slate-500 mb-8 reveal delay-100">Core stack</h3>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 items-start reveal delay-100">
 
@@ -639,6 +641,14 @@
                         <div class="group flex flex-col items-center gap-3">
                             <i class="devicon-firebase-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#FFCA28] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
                             <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Firebase &amp; FCM</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-cubes text-4xl md:text-5xl text-slate-500 group-hover:text-indigo-400 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Provider</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-qrcode text-4xl md:text-5xl text-slate-500 group-hover:text-emerald-400 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">QR Scanning</span>
                         </div>
                     </div>
                 </div>
@@ -682,6 +692,18 @@
                             <i class="devicon-tailwindcss-original text-4xl text-slate-500 group-hover:text-[#38bdf8] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
                             <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Tailwind</span>
                         </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-javascript-plain text-4xl text-slate-500 group-hover:text-[#f7df1e] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">JavaScript</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-bolt text-4xl text-slate-500 group-hover:text-[#77C1D2] transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Alpine.js</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-bootstrap-plain text-4xl text-slate-500 group-hover:text-[#7952b3] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Bootstrap</span>
+                        </div>
                     </div>
                 </div>
 
@@ -712,6 +734,14 @@
                             <img src="https://cdn.simpleicons.org/hostinger/673de6" width="48" height="48" loading="lazy" alt=""
                                  class="w-10 h-10 md:w-12 md:h-12 object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300">
                             <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Hosting &amp; Deploy</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="devicon-sqlite-plain text-4xl md:text-5xl text-slate-500 group-hover:text-[#4FC3F7] transition-colors duration-300 filter grayscale group-hover:grayscale-0" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">SQLite</span>
+                        </div>
+                        <div class="group flex flex-col items-center gap-3">
+                            <i class="fas fa-magnifying-glass text-4xl md:text-5xl text-slate-500 group-hover:text-teal-400 transition-colors duration-300" aria-hidden="true"></i>
+                            <span class="text-xs font-medium text-slate-400 group-hover:text-white transition-colors">Full-Text Search</span>
                         </div>
                     </div>
                 </div>
@@ -754,6 +784,225 @@
                     </div>
                 </div>
 
+            </div>
+
+            <div class="mt-20 pt-16 border-t border-white/5 reveal delay-200">
+                <div class="text-center mb-12">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white">Everything else in the toolkit</h3>
+                    <p class="text-slate-400 mt-3 max-w-2xl mx-auto">What sits behind those logos, grouped the way I reach for it.</p>
+                </div>
+
+                <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-5 text-left items-start">
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-accent/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-code text-accent text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Languages</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">PHP</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Dart</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">TypeScript</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">JavaScript</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Kotlin</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">SQL</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-electric/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-server text-electric text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Backend</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Laravel</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Node.js</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Express.js</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Livewire</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">REST API Design</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Eloquent ORM</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Prisma ORM</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Database Design &amp; Migrations</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Queues &amp; Background Jobs (BullMQ)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Caching (Redis)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Server-Sent Events</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Webhook Handling &amp; Signature Verification</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">OpenAPI / Swagger</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-sky-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-window-maximize text-sky-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Frontend</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">React.js</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Next.js</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Blade Templating</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Alpine.js</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Tailwind CSS</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Bootstrap</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">State Management</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Responsive Design</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-cyan-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-mobile-screen-button text-cyan-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Mobile</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Flutter</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">React Native</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Riverpod</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Provider</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Clean Architecture</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Flutter Secure Storage</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Firebase</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Firestore</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">FCM</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">QR Code Implementation</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Offline &amp; Error-State Handling</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-emerald-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-database text-emerald-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Databases</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">PostgreSQL</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">MySQL</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">SQLite</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Redis</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Full-Text Search (pg_trgm)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Query &amp; N+1 Optimisation</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Indexing</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-purple-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-sitemap text-purple-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Architecture &amp; Principles</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Clean Architecture</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Domain-Driven Design</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">SOLID</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">MVC</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">OOP</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Multi-Tenant System Design</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">API Integration</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-rose-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-shield-halved text-rose-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Security &amp; Access</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">JWT</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Laravel Sanctum</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">SSO</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">OAuth2 / OpenID Connect</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Role-Based Access Control</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Two-Factor Auth (2FA / OTP)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Password Hashing (Argon2id / bcrypt)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Input Validation (Zod)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Audit Logging</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-amber-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-credit-card text-amber-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Payments &amp; Fintech</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Payment Gateway (Midtrans)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Transaction-Safe Ledgers</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Idempotency Keys</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Pessimistic Locking</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Settlement</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Refunds</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Disbursement Flows</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-indigo-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-plug text-indigo-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Integrations</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">RajaOngkir (Shipping &amp; Region API)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Courier Tracking Webhooks</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Firebase Cloud Messaging</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Web &amp; Mobile Push Notifications</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Email / SMTP Delivery</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-teal-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-vial text-teal-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Testing &amp; Quality</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Jest</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Supertest</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Pest / PHPUnit</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">flutter_test</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Playwright (E2E)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Larastan / PHPStan</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Test-Driven Development</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Usability Testing</li>
+                        </ul>
+                    </article>
+
+                    <article class="rounded-2xl border border-white/5 bg-card/20 p-6 hover:border-orange-400/30 transition-colors duration-300">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="w-9 h-9 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                                <i class="fas fa-screwdriver-wrench text-orange-400 text-sm" aria-hidden="true"></i>
+                            </span>
+                            <h4 class="text-[13px] font-semibold uppercase tracking-[0.15em] text-white">Tooling &amp; Delivery</h4>
+                        </div>
+                        <ul class="flex flex-wrap gap-2">
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Git</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">CI/CD Pipelines</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Structured Logging</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Error Monitoring (Sentry)</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Performance Optimisation</li>
+                            <li class="px-3 py-1.5 text-[11px] leading-none rounded-lg bg-white/[0.04] border border-white/10 text-slate-300 hover:bg-white/[0.08] hover:text-white transition-colors duration-200">Debugging</li>
+                        </ul>
+                    </article>
+
+                </div>
             </div>
         </div>
     </section>
