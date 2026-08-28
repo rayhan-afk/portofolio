@@ -7,19 +7,24 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-300: oklch(80.8% 0.114 19.571);
+    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-500: oklch(63.7% 0.237 25.331);
     --color-orange-300: oklch(83.7% 0.128 66.29);
     --color-orange-400: oklch(75% 0.183 55.934);
     --color-orange-500: oklch(70.5% 0.213 47.604);
+    --color-amber-300: oklch(87.9% 0.169 91.605);
     --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-yellow-400: oklch(85.2% 0.199 91.936);
     --color-yellow-500: oklch(79.5% 0.184 86.047);
+    --color-lime-400: oklch(84.1% 0.238 128.85);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-emerald-400: oklch(76.5% 0.177 163.223);
     --color-emerald-500: oklch(69.6% 0.17 162.48);
+    --color-teal-300: oklch(85.5% 0.138 181.071);
+    --color-teal-400: oklch(77.7% 0.152 181.912);
     --color-teal-600: oklch(60% 0.118 184.704);
     --color-cyan-300: oklch(86.5% 0.127 207.078);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
@@ -29,12 +34,15 @@
     --color-blue-300: oklch(80.9% 0.105 251.813);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-indigo-300: oklch(78.5% 0.115 274.713);
+    --color-indigo-400: oklch(67.3% 0.182 276.935);
     --color-indigo-500: oklch(58.5% 0.233 277.117);
+    --color-violet-300: oklch(81.1% 0.111 293.571);
     --color-violet-400: oklch(70.2% 0.183 293.541);
     --color-violet-500: oklch(60.6% 0.25 292.717);
     --color-purple-300: oklch(82.7% 0.119 306.383);
     --color-purple-400: oklch(71.4% 0.203 305.504);
     --color-purple-500: oklch(62.7% 0.265 303.9);
+    --color-pink-400: oklch(71.8% 0.202 349.761);
     --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-rose-400: oklch(71.2% 0.194 13.428);
     --color-rose-500: oklch(64.5% 0.246 16.439);
@@ -505,6 +513,9 @@
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
+  .h-9 {
+    height: calc(var(--spacing) * 9);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -559,6 +570,9 @@
   .min-h-\[1rem\] {
     min-height: 1rem;
   }
+  .min-h-\[26px\] {
+    min-height: 26px;
+  }
   .min-h-\[220px\] {
     min-height: 220px;
   }
@@ -570,6 +584,9 @@
   }
   .w-3 {
     width: calc(var(--spacing) * 3);
+  }
+  .w-9 {
+    width: calc(var(--spacing) * 9);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -776,8 +793,8 @@
   .gap-y-2 {
     row-gap: calc(var(--spacing) * 2);
   }
-  .gap-y-8 {
-    row-gap: calc(var(--spacing) * 8);
+  .gap-y-7 {
+    row-gap: calc(var(--spacing) * 7);
   }
   :where(.divide-y > :not(:last-child)) {
     --tw-divide-y-reverse: 0;
@@ -1845,6 +1862,9 @@
         border-color: color-mix(in oklab, var(--color-accent) 50%, transparent);
       }
     }
+    .group-hover\:text-\[\#4FC3F7\]:is(:where(.group):hover *) {
+      color: #4FC3F7;
+    }
     .group-hover\:text-\[\#5B7CFA\]:is(:where(.group):hover *) {
       color: #5B7CFA;
     }
@@ -1856,6 +1876,12 @@
     }
     .group-hover\:text-\[\#61DAFB\]:is(:where(.group):hover *) {
       color: #61DAFB;
+    }
+    .group-hover\:text-\[\#77C1D2\]:is(:where(.group):hover *) {
+      color: #77C1D2;
+    }
+    .group-hover\:text-\[\#85EA2D\]:is(:where(.group):hover *) {
+      color: #85EA2D;
     }
     .group-hover\:text-\[\#0175C2\]:is(:where(.group):hover *) {
       color: #0175C2;
@@ -1878,20 +1904,23 @@
     .group-hover\:text-\[\#3178c6\]:is(:where(.group):hover *) {
       color: #3178c6;
     }
+    .group-hover\:text-\[\#7952b3\]:is(:where(.group):hover *) {
+      color: #7952b3;
+    }
     .group-hover\:text-\[\#336791\]:is(:where(.group):hover *) {
       color: #336791;
     }
     .group-hover\:text-\[\#C21325\]:is(:where(.group):hover *) {
       color: #C21325;
     }
-    .group-hover\:text-\[\#F05032\]:is(:where(.group):hover *) {
-      color: #F05032;
-    }
     .group-hover\:text-\[\#FFCA28\]:is(:where(.group):hover *) {
       color: #FFCA28;
     }
     .group-hover\:text-\[\#d82c20\]:is(:where(.group):hover *) {
       color: #d82c20;
+    }
+    .group-hover\:text-\[\#f7df1e\]:is(:where(.group):hover *) {
+      color: #f7df1e;
     }
     .group-hover\:text-\[\#f0452f\]:is(:where(.group):hover *) {
       color: #f0452f;
@@ -1902,6 +1931,9 @@
     .group-hover\:text-\[\#ff2d20\]:is(:where(.group):hover *) {
       color: #ff2d20;
     }
+    .group-hover\:text-amber-300:is(:where(.group):hover *) {
+      color: var(--color-amber-300);
+    }
     .group-hover\:text-amber-400:is(:where(.group):hover *) {
       color: var(--color-amber-400);
     }
@@ -1911,8 +1943,20 @@
     .group-hover\:text-blue-500:is(:where(.group):hover *) {
       color: var(--color-blue-500);
     }
+    .group-hover\:text-emerald-400:is(:where(.group):hover *) {
+      color: var(--color-emerald-400);
+    }
     .group-hover\:text-green-500:is(:where(.group):hover *) {
       color: var(--color-green-500);
+    }
+    .group-hover\:text-indigo-400:is(:where(.group):hover *) {
+      color: var(--color-indigo-400);
+    }
+    .group-hover\:text-lime-400:is(:where(.group):hover *) {
+      color: var(--color-lime-400);
+    }
+    .group-hover\:text-pink-400:is(:where(.group):hover *) {
+      color: var(--color-pink-400);
     }
     .group-hover\:text-pink-500:is(:where(.group):hover *) {
       color: var(--color-pink-500);
@@ -1920,14 +1964,29 @@
     .group-hover\:text-purple-400:is(:where(.group):hover *) {
       color: var(--color-purple-400);
     }
+    .group-hover\:text-red-400:is(:where(.group):hover *) {
+      color: var(--color-red-400);
+    }
     .group-hover\:text-red-500:is(:where(.group):hover *) {
       color: var(--color-red-500);
     }
     .group-hover\:text-rose-400:is(:where(.group):hover *) {
       color: var(--color-rose-400);
     }
+    .group-hover\:text-sky-300:is(:where(.group):hover *) {
+      color: var(--color-sky-300);
+    }
     .group-hover\:text-sky-400:is(:where(.group):hover *) {
       color: var(--color-sky-400);
+    }
+    .group-hover\:text-teal-300:is(:where(.group):hover *) {
+      color: var(--color-teal-300);
+    }
+    .group-hover\:text-teal-400:is(:where(.group):hover *) {
+      color: var(--color-teal-400);
+    }
+    .group-hover\:text-violet-300:is(:where(.group):hover *) {
+      color: var(--color-violet-300);
     }
     .group-hover\:text-white:is(:where(.group):hover *) {
       color: var(--color-white);
@@ -2147,6 +2206,9 @@
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    .sm\:grid-cols-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
     .sm\:flex-row {
       flex-direction: row;
     }
@@ -2155,14 +2217,14 @@
     .md\:right-4 {
       right: calc(var(--spacing) * 4);
     }
-    .md\:h-12 {
-      height: calc(var(--spacing) * 12);
+    .md\:h-10 {
+      height: calc(var(--spacing) * 10);
     }
     .md\:h-52 {
       height: calc(var(--spacing) * 52);
     }
-    .md\:w-12 {
-      width: calc(var(--spacing) * 12);
+    .md\:w-10 {
+      width: calc(var(--spacing) * 10);
     }
     .md\:w-40 {
       width: calc(var(--spacing) * 40);
