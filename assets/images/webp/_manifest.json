@@ -27,6 +27,13 @@
     "kb": 16,
     "oldKb": 109
   },
+  "fotorayhan.jpeg": {
+    "webp": "assets/images/webp/fotorayhan.webp",
+    "w": 440,
+    "h": 440,
+    "kb": 23,
+    "oldKb": 162
+  },
   "halaman-detail-dengan-komentar.jpg": {
     "webp": "assets/images/webp/halaman-detail-dengan-komentar.webp",
     "w": 720,
